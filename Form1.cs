@@ -3,7 +3,7 @@ namespace RotatingCube
     public partial class Form1 : Form
     {
         private Pen pen = new Pen(Color.Black, 5f);
-        private Cube[] cubes = new Cube[10];
+        private Cube[] cubes = new Cube[1];
 
         public Form1()
         {
@@ -22,7 +22,7 @@ namespace RotatingCube
             g.TranslateTransform(ClientSize.Width / 2, ClientSize.Height / 2);
             g.ScaleTransform(1, -1);
 
-            cubes[0].position.x += 1;
+            cubes[0].position.z += 1;
 
             foreach (Cube cube in cubes) cube.Draw(g);
         }
