@@ -22,7 +22,7 @@ namespace RotatingCube
             g.TranslateTransform(ClientSize.Width / 2, ClientSize.Height / 2);
             g.ScaleTransform(1, -1);
 
-            cubes[0].position.z += 1;
+            cubes[0].position.x += 1;
 
             foreach (Cube cube in cubes) cube.Draw(g);
         }
